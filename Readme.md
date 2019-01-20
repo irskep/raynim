@@ -15,3 +15,18 @@ nim c -r \
   -d:glfwJustCdecl \
   -d:raynimCompile \
   mygame.nim
+
+# There are 4 Raylib bindings, why use this one???
+
+1. All of the APIs are actually usable.
+2. It's generated with nimterop instead of c2nim, so the bindings don't need to be updated manually to keep up with API changes.
+
+# Rough edges
+
+You have to typecast a lot. Enums aren't translated cleanly, so you'll have to do things like this:
+
+```nim
+SetCameraMode(camera, (cint) CAMERA_FIRST_PERSON)  # ugh
+```
+
+Other than that, all code should translate cleanly.
