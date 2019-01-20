@@ -9,6 +9,5 @@ import nimterop/cImport
 ]#
 type va_list* {.importc, header:"<stdarg.h>".} = object
 
-cDebug()
 cAddSearchDir(splitPath(currentSourcePath()).head)
 cImport(cSearchPath("raylib.h"))
