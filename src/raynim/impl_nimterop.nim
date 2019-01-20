@@ -1,3 +1,4 @@
+import ospaths
 import nimterop/cImport
 
 #[
