@@ -15,8 +15,9 @@ nim c -r \
   -d:glfwJustCdecl \
   -d:raynimCompile \
   mygame.nim
+```
 
-# There are 4 Raylib bindings, why use this one???
+# There are 4 Raylib bindings for Nim, why use this one???
 
 1. All of the APIs are actually usable.
 2. It's generated with nimterop instead of c2nim, so the bindings don't need to be updated manually to keep up with API changes.
