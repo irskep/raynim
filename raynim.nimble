@@ -1,0 +1,14 @@
+# Package
+
+version       = "0.1.0"
+author        = "Steve Landey"
+description   = "Raylib bindings for Nim using nimterop"
+license       = "MIT"
+srcDir        = "src"
+
+task testMac, "Runs the test suite":
+  exec "nim c -r tests/test1"
+
+# Dependencies
+
+requires "nim >= 0.19.2"
