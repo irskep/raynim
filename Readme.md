@@ -1,6 +1,6 @@
 # Usage
 
-You need to pass `-d:glfwJustCdecl -d:raynimCompile` to `nim c` on all platforms.
+You need to pass `-d:glfwJustCdecl -d:raynimCompile` to `nim c` on all platforms. The first symbol lets us import `glfw` without creating duplicate symbomls. The second is a workaround for Nim IDE support falling down on nimterop imports. (Without the flag, it loads all the declarations from cached nimterop output instead of the actual header.)
 
 You also need to link raylib somehow.
 
