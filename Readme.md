@@ -17,6 +17,8 @@ nim c -r \
   mygame.nim
 ```
 
+Using a dynamic library should also be straightforward, but you'll need to figure it out for yourself.
+
 # There are 4 Raylib bindings for Nim, why use this one???
 
 1. All of the APIs are actually usable.

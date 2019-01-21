@@ -1,6 +1,5 @@
 # Cache of toast output so vscode stops shitting the bed every 5 minutes
-type va_list* {.importc, header:"<stdarg.h>".} = object
-
+import nimterop/cImport
 {.experimental: "codeReordering".}
 type
   ConfigFlag* = distinct int
