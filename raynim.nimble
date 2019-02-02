@@ -11,4 +11,7 @@ task testMac, "Runs the test suite":
 
 # Dependencies
 
-requires "nim >= 0.19.2"
+requires(
+  "nim >= 0.19.2",
+  "https://github.com/genotrance/nimterop#head",
+  "https://github.com/irskep/nim-glfw#raw-cdecls")
